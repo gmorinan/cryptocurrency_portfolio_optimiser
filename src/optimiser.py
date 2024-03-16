@@ -11,10 +11,8 @@ def solver(
         mu_expected_return: pd.Series,
         dct_coin_category: dict,
         dct_category_groupings: dict,
-        min_weights_assets: dict,
-        max_weights_assets: dict,
-        min_weights_categories: dict,
-        max_weights_categories: dict,
+        weights_assets: dict,
+        weights_categories: dict,
         n_max_assets: int = 10
 ) -> pd.Series:
     
@@ -31,14 +29,10 @@ def solver(
         Which assets fall into which categories.
     dct_category_groupings : dict
         which categories fall into which groupings
-    min_weights_assets : dict
-        The minimum weights of each asset.
-    max_weights_assets : dict
-        The maximum weights of each asset.
-    min_weights_categories : dict
-        The minimum weights of each category.
-    max_weights_categories : dict
-        The maximum weights of each category.
+    weights_assets : dict
+        The minimum / maximum weights of each asset.
+    weights_categories : dict
+        The minimum / maximum weights of each category.
     n_max_assets : int
         The maximum number of assets to include.
 
@@ -61,10 +55,10 @@ def solver(
     constraints = [cp.sum(weights) == 1, weights >= 0]
 
     # for each asset add constraint based on user inputs
-    for asset, min_weight in min_weights_assets.items():
-        constraints.append(weights[lst_assets.index(asset)] >= min_weight)
-    for asset, max_weight in max_weights_assets.items():
-        constraints.append(weights[lst_assets.index(asset)] <= max_weight)
+    for asset, (w_min, w_max) in weights_assets.items():
+        constraints.append(weights[lst_assets.index(asset)] >= w_min)
+        constraints.append(weights[lst_assets.index(asset)] <= w_max)
+
 
     # for each category add constraint based on user inputs
     for grouping, categories in dct_category_groupings.items():
@@ -73,8 +67,8 @@ def solver(
             category_indices = [i for i, asset in enumerate(lst_assets) if asset in category_assets]
             category_weight_sum = cp.sum(weights[category_indices])
             constraints += [
-                category_weight_sum >= min_weights_categories[grouping][category],
-                category_weight_sum <= max_weights_categories[grouping][category]
+                category_weight_sum >= weights_categories[grouping][category][0],
+                category_weight_sum <= weights_categories[grouping][category][1]
             ]
 
     # solve the problem

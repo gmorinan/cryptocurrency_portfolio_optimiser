@@ -30,7 +30,6 @@ def fetch_data(mode, mcap, investor_type):
                               mcap_option=mcap_options,
                             category_groupings_path=category_groupings_path)
     
-    weights_assets = {asset: [0.0, 1.0] for asset in lst_assets}
     weights_categories = {
             grouping: {cat: [0.0, 1.0] for cat in categories}
          for grouping, categories in dct_category_groupings.items()
@@ -78,14 +77,24 @@ def fetch_data(mode, mcap, investor_type):
             grouping: {cat: [0.0, 1.0] for cat in categories}
             for grouping, categories in dct_category_groupings.items()
         },
-        "weights_assets":weights_assets, 
         "weights_categories":weights_categories
     }
 
 
 def solve_function():
     # Your solving logic here
+    allocation = solver(
+        st.session_state.fetched_data["lst_assets"],
+        st.session_state.fetched_data["mu_expected_return"],
+        st.session_state.fetched_data["dct_coin_category"],
+        st.session_state.fetched_data["dct_category_groupings"],
+        st.session_state.fetched_data["weights_assets"],
+        st.session_state.fetched_data["weights_categories"],
+        st.session_state.max_assets,
+    )
     st.write("Solve function executed.")
+    st.write("Your portfolio:", allocation.to_frame()) 
+    return 
 
 
 ### INITIAL SETUP ###
@@ -113,10 +122,13 @@ st.sidebar.markdown('### Important config')
 
 mode = st.sidebar.radio("Number of options:", ("Keep it simple plz", "Give me MAX options"))
 
-mcap = st.sidebar.radio("Number of assets:", ("Large market caps only", 
+mcap = st.sidebar.radio("Type of assets:", ("Large market caps only", 
                                               "Medium or large caps is fine by me", 
                                               "Will consider small (within reason)",
-                                              "I will invest in literally anything"))
+                                              "I will invest in literally anything"),
+                                index=1)
+
+n_assets = st.sidebar.radio("Maximum number of assets in portfolio:", (5, 10, 20, 50))
 
 investor_type = st.sidebar.radio("I would describe my investment strategy as:", (
     "Just give me all the options and I'll choose for myself",
@@ -137,9 +149,11 @@ if ('fetched_data' not in st.session_state
     st.session_state.selected_mode = mode
     st.session_state.selected_mcap = mcap
     st.session_state.selected_investor = investor_type
+    st.session_state.max_assets = n_assets
 
 
 ### Create form ####
+weights_assets = {asset: [0.0, 1.0] for asset in st.session_state.fetched_data["lst_assets"]}
 
 name_dict = st.session_state.fetched_data['name_dict']
 # add allocation forms for each category
@@ -153,10 +167,10 @@ for form_name, my_dict in st.session_state.fetched_data["weights_categories"].it
             for key, values in my_dict.items():
     
                 with col1:
-                    num1 = st.number_input(f"{key}", value=values[0])
+                    num1a = st.number_input(f"{key} (min)", value=values[0])
                 with col2:
-                    num2 = st.number_input(f"{key}", value=values[1])
-                updated_values[key] = [num1, num2]
+                    num2a = st.number_input(f"{key} (max)", value=values[1])
+                updated_values[key] = [num1a, num2a]
             
             # Form submission button
             submitted = st.form_submit_button("Submit")
@@ -174,22 +188,25 @@ with st.expander(f"Constrain allocation by asset (click to expand)"):
         col1.markdown("#### Minimum allocation")
         col2.markdown("#### Maximum allocation")
         updated_values = {}
-        for key, value in st.session_state.fetched_data["weights_assets"].items():
+        for key, value in weights_assets.items():
             with col1:
-                num1 = st.number_input(f"{name_dict[key]}", value=0.0)
+                num1b = st.number_input(f"{name_dict[key]} (min)", value=0.0)
             with col2:
-                num2 = st.number_input(f"{name_dict[key]}", value=1.0)
-            updated_values[key] = [num1, num2]
+                num2b = st.number_input(f"{name_dict[key]} (max)", value=1.0)
+            updated_values[key] = [num1b, num2b]
         
         # Form submission button
         submitted = st.form_submit_button("Submit")
         if submitted:
             if valid_input_weights(updated_values):
-                st.session_state.fetched_data["weights_assets"] = updated_values
+                weights_assets = updated_values
                 st.write("Updated values for assets:", updated_values)
             else:
                 st.error("Minimum weights must sum to less than or equal to 1 (and ideally less that 0.7 if you want the optimiser to converge)")
 
 
+solve_clicked = st.button("Optimise Portfolio")
 
-solve_clicked = st.button("Solve")
+# Check if "Solve" was clicked and call the solve_function
+if solve_clicked:
+    allocation = solve_function()
