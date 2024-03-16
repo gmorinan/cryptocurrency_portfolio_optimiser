@@ -10,11 +10,14 @@ import streamlit as st
 def solver(
         lst_assets: list,
         mu_expected_return: pd.Series,
+        sigma_covariance: pd.DataFrame,
         dct_coin_category: dict,
         dct_category_groupings: dict,
         weights_assets: dict,
         weights_categories: dict,
-        n_max_assets: int = 10
+        name_dict: dict,
+        n_max_assets: str = 10,
+        portfolio_risk_level: float = 0.005,
 ) -> pd.Series:
     
     """
@@ -26,6 +29,8 @@ def solver(
         The list of assets.
     mu_expected_return : pd.Series
         The expected return of each asset.
+    sigma_covariance : pd.DataFrame
+        The covariance matrix of the assets.
     dct_coin_category : dict
         Which assets fall into which categories.
     dct_category_groupings : dict
@@ -36,6 +41,8 @@ def solver(
         The minimum / maximum weights of each category.
     n_max_assets : int
         The maximum number of assets to include.
+    portfolio_risk_level : float
+        The maximum risk level of the portfolio.
 
     Returns
     -------
@@ -52,16 +59,20 @@ def solver(
     expected_return = mu.T @ var_weights
     objective = cp.Maximize(expected_return)
 
+    # set up constraint on risk
+    sigma_covariance_subset = sigma_covariance.loc[lst_assets][lst_assets]
+    portfolio_variance = cp.quad_form(var_weights, cp.psd_wrap(sigma_covariance_subset))
+
+    # set up constraints
     min_weights = [weights_assets.get(asset)[0] for asset in lst_assets]
     max_weights = [weights_assets.get(asset)[1] for asset in lst_assets]
 
-
-    # create initial baseline constraints 
     constraints = [
         cp.sum(var_weights) == 1, 
         var_weights >= 0,
         var_weights >= min_weights,
-        var_weights <= max_weights
+        var_weights <= max_weights,
+        portfolio_variance <= portfolio_risk_level
         ]
 
     #for each category add constraint based on user inputs
@@ -77,11 +88,12 @@ def solver(
 
     # solve the problem
     prob = cp.Problem(objective, constraints)
-    prob.solve(solver=cp.OSQP)
+    prob.solve(solver=cp.SCS)
 
     # return the optimised weights
     optimized_weights = var_weights.value
-    allocation = pd.Series(dict(zip(lst_assets, optimized_weights))).sort_values(ascending=False)
+    allocation = pd.Series(dict(zip(lst_assets, optimized_weights)), name='allocation').sort_values(ascending=False)
+    allocation.index = allocation.index.map(name_dict)
     return constrain_to_n_assets(allocation, n_max_assets=n_max_assets)
 
 

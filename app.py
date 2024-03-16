@@ -18,6 +18,12 @@ mcap_dict = {
     "Medium or large caps is fine by me": ["XL Market Cap", "Large Market Cap", "Medium Market Cap"],
     "Will consider small (within reason)": ["XL Market Cap", "Large Market Cap", "Medium Market Cap", "Small Market Cap"],
 }
+risk_level_values = {
+    'High': 0.05,
+    'Medium': 0.005,
+    'Low': 0.0005
+}
+
 
 def fetch_data(mode, mcap, investor_type):
     category_groupings_path = mode_option_dict.get(mode, 'data/category_groupings.json')
@@ -34,30 +40,28 @@ def fetch_data(mode, mcap, investor_type):
             grouping: {cat: [0.0, 1.0] for cat in categories}
          for grouping, categories in dct_category_groupings.items()
     }
-
-    if investor_type == "Bit conservative (is centralisation really that bad?)":
-        for key, vals in {"Stablecoins": [0.0, 0.1], 
-                        "Centralized Exchange (CEX)": [0.0, 0.05],
-                        "Decentralized Finance (DeFi)": [0.2, 1.0],
-                        "NFT": [0.0, 0.1],
+    if investor_type == "Trad-fi":
+        for key, vals in {"Stablecoins": [0.2, 1.0], 
+                        "Centralized Exchange (CEX)": [0.2, 1.0],
+                        "Decentralized Finance (DeFi)": [0.0, 0.0],
+                        "NFT": [0.0, 0.0],
                         "Meme": [0.0, 0.0]}.items():
             if key in weights_categories['Category']:
                 weights_categories['Category'][key] = vals
 
-    if investor_type == "High risk is fine, but not full degen":
-        for key, vals in {"Stablecoins": [0.0, 0.1], 
-                        "Centralized Exchange (CEX)": [0.0, 0.05],
-                        "Decentralized Finance (DeFi)": [0.1, 1.0],
+    if investor_type == "ETH-maxi":
+        for key, vals in {"Layer 2 (L2)": [0.3, 1.0], 
+                        "Centralized Exchange (CEX)": [0.0, 0.0],
                         "NFT": [0.0, 1.0],
                         "Meme": [0.0, 1.0]}.items():
             if key in weights_categories['Category']:
                 weights_categories['Category'][key] = vals
+            weights_categories['Ecosystem']['Ethereum Ecosystem'] = [0.8, 1.0]
 
     if investor_type == "Woof!":
         for key, vals in {"Stablecoins": [0.0, 0.0], 
                         "Centralized Exchange (CEX)": [0.0, 0.0],
-                        "Decentralized Finance (DeFi)": [0.0, 1.0],
-                        "NFT": [0.1, 1.0],
+                        "NFT": [0.2, 1.0],
                         "Meme": [0.5, 1.0]}.items():
             if key in weights_categories['Category']:
                 weights_categories['Category'][key] = vals
@@ -82,22 +86,17 @@ def fetch_data(mode, mcap, investor_type):
 
 
 def solve_function():
-    # st.write(st.session_state.fetched_data["lst_assets"])
-    # st.write(st.session_state.fetched_data["mu_expected_return"])
-    # st.write(st.session_state.fetched_data["dct_coin_category"])
-    # st.write(st.session_state.fetched_data["dct_category_groupings"])
-    # st.write(st.session_state.fetched_data["weights_assets"])
-    # st.write(st.session_state.fetched_data["weights_categories"])
-    # st.write(st.session_state.max_assets)
-
     allocation = solver(
-        st.session_state.fetched_data["lst_assets"],
-        st.session_state.fetched_data["mu_expected_return"],
-        st.session_state.fetched_data["dct_coin_category"],
-        st.session_state.fetched_data["dct_category_groupings"],
-        st.session_state.fetched_data["weights_assets"],
-        st.session_state.fetched_data["weights_categories"],
-        st.session_state.max_assets,
+        lst_assets=st.session_state.fetched_data["lst_assets"],
+        mu_expected_return=st.session_state.fetched_data["mu_expected_return"],
+        sigma_covariance=st.session_state.fetched_data["sigma_covariance"],
+        dct_coin_category=st.session_state.fetched_data["dct_coin_category"],
+        dct_category_groupings=st.session_state.fetched_data["dct_category_groupings"],
+        weights_assets=st.session_state.fetched_data["weights_assets"],
+        weights_categories=st.session_state.fetched_data["weights_categories"],
+        name_dict=st.session_state.fetched_data['name_dict'],
+        n_max_assets=st.session_state.max_assets,
+        portfolio_risk_level=risk_level_values[st.session_state.risk_level]
     )
 
     st.write("Solve function executed.")
@@ -134,17 +133,22 @@ mcap = st.sidebar.radio("Type of assets:", ("Large market caps only",
                                               "Medium or large caps is fine by me", 
                                               "Will consider small (within reason)",
                                               "I will invest in literally anything"),
-                                index=2)
+                                index=1)
 
-n_assets = st.sidebar.radio("Maximum number of assets in portfolio:", 
-                            (5, 10, 20, 50), index=1)
+risk_level = st.sidebar.radio(
+        "My risk tolerance is:", ("Low", "Medium", "High"), index=1)
+
+n_assets = st.sidebar.radio("Number number of assets in portfolio:", 
+                            (3, 5, 7, 10), index=1)
 
 investor_type = st.sidebar.radio("I would describe my investment strategy as:", (
-    "Just give me all the options and I'll choose for myself",
-    "Bit conservative (is centralisation really that bad?)",
-    "High risk is fine, but not full degen",
+    "Default",
+    "ETH-maxi",
+    "Trad-fi",
     "Woof!"
 ))
+
+
 
 show_clicked = st.sidebar.button("Show me which assets fall into each category")
 # Check if "Solve" was clicked and call the solve_function
@@ -161,10 +165,13 @@ if ('fetched_data' not in st.session_state
     or st.session_state.selected_mode != mode 
     or st.session_state.selected_mcap != mcap
     or st.session_state.selected_investor != investor_type
+    or st.session_state.max_assets != n_assets
+    or st.session_state.risk_level != risk_level
 ):
     st.session_state.fetched_data = fetch_data(mode, mcap, investor_type)
     st.session_state.selected_mode = mode
     st.session_state.selected_mcap = mcap
+    st.session_state.risk_level = risk_level
     st.session_state.selected_investor = investor_type
     st.session_state.max_assets = n_assets
 
@@ -226,4 +233,4 @@ solve_clicked = st.button("Optimise Portfolio")
 
 # Check if "Solve" was clicked and call the solve_function
 if solve_clicked:
-    allocation = solve_function()
+    solve_function()
