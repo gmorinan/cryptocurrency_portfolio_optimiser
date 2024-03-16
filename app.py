@@ -82,7 +82,14 @@ def fetch_data(mode, mcap, investor_type):
 
 
 def solve_function():
-    # Your solving logic here
+    # st.write(st.session_state.fetched_data["lst_assets"])
+    # st.write(st.session_state.fetched_data["mu_expected_return"])
+    # st.write(st.session_state.fetched_data["dct_coin_category"])
+    # st.write(st.session_state.fetched_data["dct_category_groupings"])
+    # st.write(st.session_state.fetched_data["weights_assets"])
+    # st.write(st.session_state.fetched_data["weights_categories"])
+    # st.write(st.session_state.max_assets)
+
     allocation = solver(
         st.session_state.fetched_data["lst_assets"],
         st.session_state.fetched_data["mu_expected_return"],
@@ -92,9 +99,10 @@ def solve_function():
         st.session_state.fetched_data["weights_categories"],
         st.session_state.max_assets,
     )
+
     st.write("Solve function executed.")
     st.write("Your portfolio:", allocation.to_frame()) 
-    return 
+    return allocation
 
 
 ### INITIAL SETUP ###
@@ -126,9 +134,10 @@ mcap = st.sidebar.radio("Type of assets:", ("Large market caps only",
                                               "Medium or large caps is fine by me", 
                                               "Will consider small (within reason)",
                                               "I will invest in literally anything"),
-                                index=1)
+                                index=2)
 
-n_assets = st.sidebar.radio("Maximum number of assets in portfolio:", (5, 10, 20, 50))
+n_assets = st.sidebar.radio("Maximum number of assets in portfolio:", 
+                            (5, 10, 20, 50), index=1)
 
 investor_type = st.sidebar.radio("I would describe my investment strategy as:", (
     "Just give me all the options and I'll choose for myself",
@@ -136,6 +145,14 @@ investor_type = st.sidebar.radio("I would describe my investment strategy as:", 
     "High risk is fine, but not full degen",
     "Woof!"
 ))
+
+show_clicked = st.sidebar.button("Show me which assets fall into each category")
+# Check if "Solve" was clicked and call the solve_function
+if show_clicked:
+    st.markdown('#### Assets in each category')
+    st.markdown('###### (double click on a cell to show all)')
+    st.write(st.session_state.fetched_data["dct_coin_category"])
+
 
 
 ### Session state handling ###

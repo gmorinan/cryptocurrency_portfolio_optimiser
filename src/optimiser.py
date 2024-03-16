@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import cvxpy as cp
 import ast
+import streamlit as st
 
 def solver(
         lst_assets: list,
@@ -43,29 +44,32 @@ def solver(
     """
 
     # set up primary variable 
-    n_assets = len(mu_expected_return)
-    weights = cp.Variable(n_assets)
+    n_assets = len(lst_assets)
+    var_weights = cp.Variable(n_assets)
 
     # set objective function based on maximising returns
-    mu = mu_expected_return.values
-    expected_return = mu.T @ weights
+    mu = mu_expected_return.loc[lst_assets].values
+    expected_return = mu.T @ var_weights
     objective = cp.Maximize(expected_return)
 
+    min_weights = [weights_assets.get(asset)[0] for asset in lst_assets]
+    max_weights = [weights_assets.get(asset)[1] for asset in lst_assets]
+
+
     # create initial baseline constraints 
-    constraints = [cp.sum(weights) == 1, weights >= 0]
+    constraints = [
+        cp.sum(var_weights) == 1, 
+        var_weights >= 0,
+        var_weights >= min_weights,
+        var_weights <= max_weights
+        ]
 
-    # for each asset add constraint based on user inputs
-    for asset, (w_min, w_max) in weights_assets.items():
-        constraints.append(weights[lst_assets.index(asset)] >= w_min)
-        constraints.append(weights[lst_assets.index(asset)] <= w_max)
-
-
-    # for each category add constraint based on user inputs
+    #for each category add constraint based on user inputs
     for grouping, categories in dct_category_groupings.items():
         for category in categories:
             category_assets = dct_coin_category[category]
             category_indices = [i for i, asset in enumerate(lst_assets) if asset in category_assets]
-            category_weight_sum = cp.sum(weights[category_indices])
+            category_weight_sum = cp.sum(var_weights[category_indices])
             constraints += [
                 category_weight_sum >= weights_categories[grouping][category][0],
                 category_weight_sum <= weights_categories[grouping][category][1]
@@ -73,10 +77,10 @@ def solver(
 
     # solve the problem
     prob = cp.Problem(objective, constraints)
-    prob.solve()
+    prob.solve(solver=cp.OSQP)
 
     # return the optimised weights
-    optimized_weights = weights.value
+    optimized_weights = var_weights.value
     allocation = pd.Series(dict(zip(lst_assets, optimized_weights))).sort_values(ascending=False)
     return constrain_to_n_assets(allocation, n_max_assets=n_max_assets)
 
@@ -100,4 +104,6 @@ def valid_input_weights(input_dict: dict):
     """
     Function to check if the input weights are valid.
     """
-    return sum([v[0] for v in input_dict.values()]) <= 1.0
+    condition_1 = sum([v[0] for v in input_dict.values()]) <= 1.0
+    condition_2 = all([(v[0]>=0) and (v[0]<=1) for v in input_dict.values()])
+    return condition_1 and condition_2
