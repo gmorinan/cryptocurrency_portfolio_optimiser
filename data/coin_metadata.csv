@@ -1,0 +1,251 @@
+id,symbol,name,asset_platform_id,market_cap_rank,categories,market_caps
+bitcoin,btc,Bitcoin,,1,"['FTX Holdings', 'Cryptocurrency', 'Proof of Work (PoW)', 'Layer 1 (L1)']",1367669237527.8738
+ethereum,eth,Ethereum,,2,"['FTX Holdings', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Smart Contract Platform', 'Layer 1 (L1)', 'Ethereum Ecosystem']",449221029692.6131
+tether,usdt,Tether,ethereum,3,"['FTX Holdings', 'Kava Ecosystem', 'Tron Ecosystem', 'Stablecoins', 'USD Stablecoin', 'Solana Ecosystem', 'Near Protocol Ecosystem', 'Avalanche Ecosystem', 'Tezos Ecosystem', 'Ethereum Ecosystem']",103373346487.36938
+binancecoin,bnb,BNB,,4,"['Alleged SEC Securities', 'FTX Holdings', 'Proof of Stake (PoS)', 'Smart Contract Platform', 'Exchange-based Tokens', 'Centralized Exchange (CEX)', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Moonriver Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",95332139987.79802
+solana,sol,Solana,,5,"['Alleged SEC Securities', 'FTX Holdings', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Smart Contract Platform', 'Solana Ecosystem', 'Layer 1 (L1)']",81845073461.4935
+staked-ether,steth,Lido Staked Ether,ethereum,6,"['Decentralized Finance (DeFi)', 'Eth 2.0 Staking', 'Ethereum Ecosystem', 'Liquid Staking Tokens']",36814413948.2165
+ripple,xrp,XRP,,7,"['FTX Holdings', 'Cryptocurrency']",34831116403.04182
+usd-coin,usdc,USDC,ethereum,8,"['Mantle Ecosystem', 'Ronin Ecosystem', 'Kava Ecosystem', 'Osmosis Ecosystem', 'Base Ecosystem', 'Hedera Ecosystem', 'Stellar Ecosystem', 'Rollux Ecosystem', 'Neon Ecosystem', 'Tron Ecosystem', 'Stablecoins', 'USD Stablecoin', 'Cosmos Ecosystem', 'Polkadot Ecosystem', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Solana Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Metis Ecosystem', 'Velas Ecosystem', 'Arbitrum Nova Ecosystem', 'Moonbeam Ecosystem', 'Cronos Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem', 'Canto Ecosystem', 'ZkSync Ecosystem']",30773017722.58478
+cardano,ada,Cardano,,9,"['Alleged SEC Securities', 'Proof of Stake (PoS)', 'Smart Contract Platform', 'Cardano Ecosystem', 'Layer 1 (L1)']",25650847321.97299
+dogecoin,doge,Dogecoin,,10,"['Dog-Themed Coins', 'Cryptocurrency', 'Elon Musk-Inspired Coins', 'Proof of Work (PoW)', 'BNB Chain Ecosystem', 'Meme']",23428259196.570793
+avalanche-2,avax,Avalanche,,11,"['Proof of Stake (PoS)', 'Smart Contract Platform', 'Layer 1 (L1)', 'Avalanche Ecosystem']",21984816258.999542
+shiba-inu,shib,Shiba Inu,ethereum,12,"['Shibarium Ecosystem', 'Dog-Themed Coins', 'BNB Chain Ecosystem', 'Meme', 'Ethereum Ecosystem']",17612397972.76436
+polkadot,dot,Polkadot,,13,"['Layer 0 (L0)', 'Proof of Stake (PoS)', 'Smart Contract Platform', 'Polkadot Ecosystem']",14522123917.336426
+the-open-network,ton,Toncoin,,14,"['Alleged SEC Securities', 'TON Ecosystem', 'Proof of Stake (PoS)', 'DWF Labs Portfolio', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Ethereum Ecosystem']",13578090559.104118
+chainlink,link,Chainlink,ethereum,15,"['Business Services', 'Osmosis Ecosystem', 'Infrastructure', 'Smart Contract Platform', 'Oracle', 'Decentralized Finance (DeFi)', 'Cosmos Ecosystem', 'Polkadot Ecosystem', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Solana Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Cardano Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Edgeware Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",11506966264.686129
+tron,trx,TRON,,16,"['Alleged SEC Securities', 'FTX Holdings', 'DWF Labs Portfolio', 'Tron Ecosystem', 'Smart Contract Platform', 'Layer 1 (L1)']",11103120113.574745
+wrapped-bitcoin,wbtc,Wrapped Bitcoin,ethereum,18,"['FTX Holdings', 'Kava Ecosystem', 'Tokenized BTC', 'Wrapped-Tokens', 'Gnosis Chain Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Metis Ecosystem', 'Velas Ecosystem', 'Moonbeam Ecosystem', 'Cronos Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem', 'ZkSync Ecosystem']",10747288746.491282
+matic-network,matic,Polygon,ethereum,17,"['Binance Launchpad', 'Alleged SEC Securities', 'FTX Holdings', 'Proof of Stake (PoS)', 'Rollup', 'Coinbase Ventures Portfolio', 'Smart Contract Platform', 'BNB Chain Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Polygon Ecosystem', 'Moonbeam Ecosystem', 'Ethereum Ecosystem', 'Layer 2 (L2)', 'Zero Knowledge (ZK)']",10607889930.673714
+uniswap,uni,Uniswap,ethereum,19,"['Defi Pulse Index (DPI)', 'Decentralized Exchange (DEX)', 'Paradigm Portfolio', 'Coinbase Ventures Portfolio', 'Governance', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'Yield Farming', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Near Protocol Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",9824692319.485306
+bitcoin-cash,bch,Bitcoin Cash,,20,"['Bitcoin Fork', 'Smart Contract Platform', 'Proof of Work (PoW)', 'Layer 1 (L1)']",8209230709.86897
+near,near,NEAR Protocol,,21,"['Alleged SEC Securities', 'FTX Holdings', 'Data Availability', 'AI-Themed Coins', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Near Protocol Ecosystem', 'Layer 1 (L1)', 'Zero Knowledge (ZK)']",7779684627.580874
+litecoin,ltc,Litecoin,,22,"['Cryptocurrency', 'Proof of Work (PoW)']",6682011461.285324
+aptos,apt,Aptos,aptos,23,"['FTX Holdings', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Aptos Ecosystem']",5941467037.234206
+internet-computer,icp,Internet Computer,internet-computer,24,"['Alleged SEC Securities', 'Multicoin Capital Portfolio', 'Smart Contract Platform', 'Storage', 'Governance', 'NFT', 'Internet Computer Ecosystem']",5913083738.524797
+leo-token,leo,LEO Token,ethereum,25,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",5612494275.067713
+filecoin,fil,Filecoin,,26,"['DePIN', 'Alleged SEC Securities', 'Infrastructure', 'Storage', 'Layer 1 (L1)']",5084148480.08079
+cosmos,atom,Cosmos Hub,,27,"['Alleged SEC Securities', 'Kava Ecosystem', 'Osmosis Ecosystem', 'Cryptocurrency', 'Proof of Stake (PoS)', 'Paradigm Portfolio', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Canto Ecosystem']",4931476971.579359
+ethereum-classic,etc,Ethereum Classic,,28,"['Smart Contract Platform', 'Proof of Work (PoW)']",4863591526.467568
+dai,dai,Dai,ethereum,29,"['Kava Ecosystem', 'Base Ecosystem', 'Stablecoins', 'USD Stablecoin', 'Decentralized Finance (DeFi)', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Metis Ecosystem', 'Velas Ecosystem', 'Arbitrum Nova Ecosystem', 'Moonbeam Ecosystem', 'Cronos Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem', 'ZkSync Ecosystem']",4648316841.807731
+immutable-x,imx,Immutable,ethereum,31,"['Immutable Ecosystem', 'Gaming Blockchains', 'Rollup', 'Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Gaming (GameFi)', 'NFT', 'Play To Earn', 'Ethereum Ecosystem', 'Layer 2 (L2)', 'Zero Knowledge (ZK)']",4264122144.5995307
+render-token,rndr,Render,ethereum,30,"['DePIN', 'Multicoin Capital Portfolio', 'Artificial Intelligence (AI)', 'Metaverse', 'NFT', 'Solana Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",4226878587.4078918
+hedera-hashgraph,hbar,Hedera,,32,"['Hedera Ecosystem', 'Protocol', 'Smart Contract Platform', 'Layer 1 (L1)']",4068188289.668871
+blockstack,stx,Stacks,,37,"['Infrastructure', 'Smart Contract Platform']",4038379879.320016
+bittensor,tao,Bittensor,,34,['Artificial Intelligence (AI)'],3980324705.6410155
+okb,okb,OKB,ethereum,35,"['X1 Ecosystem', 'Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",3977416973.250441
+injective-protocol,inj,Injective,ethereum,33,"['Binance Launchpad', 'Proof of Stake (PoS)', 'Smart Contract Platform', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",3927622471.9340205
+stellar,xlm,Stellar,,36,"['Cryptocurrency', 'Stellar Ecosystem', 'Smart Contract Platform']",3925269517.830826
+the-graph,grt,The Graph,ethereum,39,"['Business Services', 'AI-Themed Coins', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Infrastructure', 'Coinbase Ventures Portfolio', 'Analytics', 'Decentralized Finance (DeFi)', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Solana Ecosystem', 'Near Protocol Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",3876971023.9514027
+optimism,op,Optimism,optimistic-ethereum,40,"['Paradigm Portfolio', 'Optimism Ecosystem', 'Layer 2 (L2)']",3838328821.829256
+crypto-com-chain,cro,Cronos,,38,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Cosmos Ecosystem', 'Layer 1 (L1)', 'Cronos Ecosystem', 'Ethereum Ecosystem']",3795416641.789741
+pepe,pepe,Pepe,ethereum,41,"['BNB Chain Ecosystem', 'Meme', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",3765984757.531853
+vechain,vet,VeChain,vechain,42,"['Internet of Things (IOT)', 'Business Platform', 'Smart Contract Platform']",3245900981.6845083
+kaspa,kas,Kaspa,,43,"['Proof of Work (PoW)', 'Layer 1 (L1)']",3222302022.592349
+theta-token,theta,Theta Network,,44,"['DePIN', 'Theta Ecosystem', 'Entertainment', 'Smart Contract Platform', 'SocialFi', 'NFT']",3100118887.046088
+first-digital-usd,fdusd,First Digital USD,ethereum,45,"['Stablecoins', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",3014277332.3872914
+mantle,mnt,Mantle,ethereum,48,"['Mantle Ecosystem', 'DWF Labs Portfolio', 'Ethereum Ecosystem', 'Layer 2 (L2)']",2868767693.3454247
+dogwifcoin,wif,dogwifhat,solana,56,"['Dog-Themed Coins', 'Solana Meme Coins', 'Solana Ecosystem', 'Meme']",2822383719.7584944
+fetch-ai,fet,Fetch.ai,ethereum,50,"['Binance Launchpad', 'Cryptocurrency', 'DWF Labs Portfolio', 'Artificial Intelligence (AI)', 'AI Agents', 'NFT', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",2804266725.0292416
+thorchain,rune,THORChain,thorchain,47,"['Bridge Governance Tokens', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Decentralized Exchange (DEX)', 'Infrastructure', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Cosmos Ecosystem', 'BNB Chain Ecosystem']",2804221401.918474
+sei-network,sei,Sei,,46,"['Multicoin Capital Portfolio', 'Parallelized EVM', 'Sei Ecosystem', 'Coinbase Ventures Portfolio', 'Cosmos Ecosystem']",2789670915.768557
+arbitrum,arb,Arbitrum,arbitrum-one,49,"['eGirl Capital Portfolio', 'Rollup', 'Arbitrum Ecosystem', 'Arbitrum Nova Ecosystem', 'Ethereum Ecosystem', 'Layer 2 (L2)']",2740240016.1920924
+lido-dao,ldo,Lido DAO,ethereum,55,"['Multicoin Capital Portfolio', 'eGirl Capital Portfolio', 'Defi Pulse Index (DPI)', 'Infrastructure', 'Paradigm Portfolio', 'Coinbase Ventures Portfolio', 'Decentralized Finance (DeFi)', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Liquid Staking Governance Tokens', 'Ethereum Ecosystem', 'Optimism Ecosystem']",2631587642.240174
+celestia,tia,Celestia,,52,"['Data Availability', 'Proof of Stake (PoS)', 'eGirl Capital Portfolio', 'Modular Blockchain', 'Coinbase Ventures Portfolio', 'Cosmos Ecosystem']",2617604707.612166
+floki,floki,FLOKI,ethereum,60,"['Dog-Themed Coins', 'DWF Labs Portfolio', 'Gaming (GameFi)', 'Metaverse', 'NFT', 'BNB Chain Ecosystem', 'Meme', 'Ethereum Ecosystem']",2599416053.911208
+maker,mkr,Maker,ethereum,51,"['Defi Pulse Index (DPI)', 'Paradigm Portfolio', 'Governance', 'Decentralized Finance (DeFi)', 'Lending/Borrowing', 'Near Protocol Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",2595303280.7320633
+monero,xmr,Monero,,54,"['Privacy Coins', 'Proof of Work (PoW)']",2583268532.8895264
+algorand,algo,Algorand,,58,"['Alleged SEC Securities', 'Cryptocurrency', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'DWF Labs Portfolio', 'Smart Contract Platform', 'Layer 1 (L1)', 'Algorand Ecosystem']",2407919834.775471
+fantom,ftm,Fantom,,53,"['Infrastructure', 'Smart Contract Platform', 'BNB Chain Ecosystem', 'Fantom Ecosystem', 'Layer 1 (L1)', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Ethereum Ecosystem']",2403634625.09847
+gala,gala,GALA,ethereum,57,"['Gaming Platform', 'DWF Labs Portfolio', 'Gaming (GameFi)', 'NFT', 'Play To Earn', 'Layer 1 (L1)', 'Ethereum Ecosystem']",2316082517.87633
+arweave,ar,Arweave,,59,"['DePIN', 'Multicoin Capital Portfolio', 'Coinbase Ventures Portfolio', 'Storage']",2304351136.2851043
+rocket-pool-eth,reth,Rocket Pool ETH,ethereum,61,"['Base Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Liquid Staking Tokens', 'Optimism Ecosystem']",2248155448.107539
+flow,flow,Flow,,62,"['Alleged SEC Securities', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Smart Contract Platform', 'Sports', 'NFT', 'Layer 1 (L1)']",2103536388.0056593
+beam-2,beam,Beam,ethereum,64,"['Gaming Blockchains', 'DWF Labs Portfolio', 'Gaming (GameFi)', 'Binance Launchpool', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",2011237893.8342671
+quant-network,qnt,Quant,ethereum,67,"['Protocol', 'Ethereum Ecosystem']",1990136730.0408604
+bonk,bonk,Bonk,solana,68,"['Dog-Themed Coins', 'Neon Ecosystem', 'Solana Meme Coins', 'BNB Chain Ecosystem', 'Solana Ecosystem', 'Meme', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Aptos Ecosystem']",1951004125.5260615
+mantle-staked-ether,meth,Mantle Staked Ether,ethereum,65,"['Ethereum Ecosystem', 'Liquid Staking Tokens']",1908250956.5798297
+aave,aave,Aave,ethereum,69,"['Defi Pulse Index (DPI)', 'Governance', 'Decentralized Finance (DeFi)', 'Lending/Borrowing', 'Yield Farming', 'BNB Chain Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",1902661178.154782
+elrond-erd-2,egld,MultiversX,,70,"['Binance Launchpad', 'Proof of Stake (PoS)', 'DWF Labs Portfolio', 'Protocol', 'Smart Contract Platform', 'Layer 1 (L1)', 'MultiversX Ecosystem']",1847599018.7572381
+sui,sui,Sui,sui,63,"['Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Binance Launchpool', 'Layer 1 (L1)', 'Sui Ecosystem']",1835682793.4383073
+bitcoin-cash-sv,bsv,Bitcoin SV,,71,"['Bitcoin Fork', 'Proof of Work (PoW)']",1791067690.9928167
+conflux-token,cfx,Conflux,,75,"['DWF Labs Portfolio', 'Proof of Work (PoW)']",1664317789.3723028
+jupiter-exchange-solana,jup,Jupiter,solana,66,"['Decentralized Exchange (DEX)', 'Decentralized Finance (DeFi)', 'Solana Ecosystem']",1625642075.8272707
+axie-infinity,axs,Axie Infinity,ethereum,73,"['Binance Launchpad', 'Alleged SEC Securities', 'Ronin Ecosystem', 'Gaming Utility Token', 'Breeding', 'Card Games', 'Paradigm Portfolio', 'Gaming Governance Token', 'Gaming (GameFi)', 'Metaverse', 'NFT', 'Axie Infinity', 'BNB Chain Ecosystem', 'Play To Earn', 'Harmony Ecosystem', 'Ethereum Ecosystem']",1607153965.1415088
+starknet,strk,Starknet,ethereum,74,"['Starknet Ecosystem', 'Multicoin Capital Portfolio', 'Paradigm Portfolio', 'Rollup', 'Coinbase Ventures Portfolio', 'Ethereum Ecosystem', 'Layer 2 (L2)']",1598965761.9850729
+dydx-chain,dydx,dYdX,cosmos,76,"['Decentralized Exchange (DEX)', 'Cosmos Ecosystem']",1583416592.7073126
+the-sandbox,sand,The Sandbox,ethereum,77,"['Binance Launchpad', 'Alleged SEC Securities', 'Gaming Utility Token', 'Simulation Games', 'Gaming (GameFi)', 'Metaverse', 'NFT', 'Near Protocol Ecosystem', 'Play To Earn', 'Harmony Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",1541074029.1109996
+bittorrent,btt,BitTorrent,tron,79,"['Binance Launchpad', 'Alleged SEC Securities', 'Ethereum Ecosystem']",1510805989.0669024
+worldcoin-wld,wld,Worldcoin,ethereum,86,"['AI-Themed Coins', 'Multicoin Capital Portfolio', 'Coinbase Ventures Portfolio', 'Ethereum Ecosystem', 'Identity', 'Optimism Ecosystem']",1492236008.0824723
+ordinals,ordi,ORDI,ordinals,82,"['Inscriptions', 'BRC-20']",1492136362.916418
+wrapped-eeth,weeth,Wrapped eETH,ethereum,80,"['Ether.fi Ecosystem', 'Restaking', 'Liquid Restaking Tokens', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",1490758739.4766417
+singularitynet,agix,SingularityNET,ethereum,84,"['Artificial Intelligence (AI)', 'Cardano Ecosystem', 'Ethereum Ecosystem']",1476541830.9175708
+ether-fi-staked-eth,eeth,ether.fi Staked ETH,ethereum,83,"['Ether.fi Ecosystem', 'Restaking', 'Liquid Restaking Tokens', 'Ethereum Ecosystem', 'Liquid Staking Tokens']",1447898349.9790099
+pyth-network,pyth,Pyth Network,solana,72,"['Business Services', 'Multicoin Capital Portfolio', 'Infrastructure', 'Oracle', 'Decentralized Finance (DeFi)', 'Solana Ecosystem']",1445941153.9111345
+kucoin-shares,kcs,KuCoin,,81,"['Exchange-based Tokens', 'Centralized Exchange (CEX)']",1437207092.628743
+mina-protocol,mina,Mina Protocol,,78,"['FTX Holdings', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Paradigm Portfolio', 'Coinbase Ventures Portfolio', 'Zero Knowledge (ZK)']",1425643585.175126
+havven,snx,Synthetix Network,ethereum,85,"['Defi Pulse Index (DPI)', 'DWF Labs Portfolio', 'Decentralized Exchange (DEX)', 'Paradigm Portfolio', 'Coinbase Ventures Portfolio', 'Governance', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Synthetic Issuer', 'Derivatives', 'Yield Farming', 'Fantom Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",1404776991.0457706
+akash-network,akt,Akash Network,,90,"['DePIN', 'Osmosis Ecosystem', 'Proof of Stake (PoS)', 'Artificial Intelligence (AI)', 'Cosmos Ecosystem']",1360298053.95143
+ribbon-finance,rbn,Ribbon Finance,ethereum,87,"['Paradigm Portfolio', 'Coinbase Ventures Portfolio', 'Governance', 'Decentralized Finance (DeFi)', 'Options', 'Structured Products', 'Ethereum Ecosystem']",1354350256.4807577
+flare-networks,flr,Flare,,91,"['DWF Labs Portfolio', 'Smart Contract Platform', 'Layer 1 (L1)']",1347030761.2439966
+apecoin,ape,ApeCoin,ethereum,88,"['Gaming Utility Token', 'Gaming Governance Token', 'Gaming (GameFi)', 'NFT', 'Polygon Ecosystem', 'Ethereum Ecosystem']",1343802599.4041817
+tokenize-xchange,tkx,Tokenize Xchange,ethereum,92,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",1312483135.675004
+chiliz,chz,Chiliz,ethereum,95,"['Alleged SEC Securities', 'Sports', 'NFT', 'Layer 1 (L1)', 'Ethereum Ecosystem']",1308578316.8183572
+helium,hnt,Helium,solana,89,"['DePIN', 'Proof of Stake (PoS)', 'Multicoin Capital Portfolio', 'Communication', 'Internet of Things (IOT)', 'Solana Ecosystem']",1304226509.0682626
+decentraland,mana,Decentraland,ethereum,93,"['Alleged SEC Securities', 'Entertainment', 'Simulation Games', 'Metaverse', 'NFT', 'BNB Chain Ecosystem', 'Play To Earn', 'Polygon Ecosystem', 'Ethereum Ecosystem']",1286342106.832418
+tezos,xtz,Tezos,,96,"['Proof of Stake (PoS)', 'Smart Contract Platform', 'Layer 1 (L1)', 'Tezos Ecosystem']",1265466289.7805152
+bitget-token,bgb,Bitget Token,ethereum,98,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",1235679285.897468
+msol,msol,Marinade staked SOL,solana,94,"['Decentralized Finance (DeFi)', 'Solana Ecosystem', 'Liquid Staking Tokens']",1222528265.4895825
+eos,eos,EOS,,99,"['DWF Labs Portfolio', 'Smart Contract Platform']",1219079645.6915503
+whitebit,wbt,WhiteBIT Coin,ethereum,100,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",1216848520.821087
+pancakeswap-token,cake,PancakeSwap,binance-smart-chain,102,"['Decentralized Exchange (DEX)', 'Governance', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'Yield Farming', 'BNB Chain Ecosystem', 'Ethereum Ecosystem', 'Aptos Ecosystem']",1189429865.2266567
+sats-ordinals,sats,SATS (Ordinals),ordinals,105,"['Inscriptions', 'BRC-20']",1188399363.8929675
+axelar,axl,Axelar,ethereum,101,"['Bridge Governance Tokens', 'Osmosis Ecosystem', 'Base Ecosystem', 'Infrastructure', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Fantom Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Moonbeam Ecosystem', 'Ethereum Ecosystem', 'Interoperability', 'Optimism Ecosystem']",1178076301.0799325
+ronin,ron,Ronin,ronin,97,"['Ronin Ecosystem', 'FTX Holdings', 'Gaming Blockchains', 'Smart Contract Platform', 'Gaming (GameFi)', 'NFT', 'Play To Earn', 'Layer 1 (L1)']",1177092767.774973
+ecash,xec,eCash,,104,"['Proof of Stake (PoS)', 'Governance', 'Layer 1 (L1)']",1157228688.6096766
+neo,neo,NEO,,107,"['Proof of Stake (PoS)', 'Smart Contract Platform']",1141323626.4154034
+true-usd,tusd,TrueUSD,ethereum,103,"['Stablecoins', 'USD Stablecoin', 'BNB Chain Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",1140482667.360856
+iota,iota,IOTA,,108,"['DePIN', 'DWF Labs Portfolio', 'Internet of Things (IOT)', 'Smart Contract Platform']",1130334611.3767266
+0x,zrx,0x Protocol,ethereum,109,"['Decentralized Exchange (DEX)', 'Coinbase Ventures Portfolio', 'Protocol', 'Governance', 'Decentralized Finance (DeFi)', 'Polkadot Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",1128390907.6662953
+dydx,ethdydx,dYdX,ethereum,106,"['Decentralized Exchange (DEX)', 'Paradigm Portfolio', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Perpetuals', 'Derivatives', 'Ethereum Ecosystem']",1118169561.8562279
+frax-ether,frxeth,Frax Ether,ethereum,111,"['BNB Chain Ecosystem', 'Fantom Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Moonbeam Ecosystem', 'Ethereum Ecosystem', 'Liquid Staking Tokens', 'Optimism Ecosystem']",1101303230.7836776
+ethena-usde,usde,Ethena USDe,ethereum,112,"['Stablecoins', 'Ethereum Ecosystem']",1079118239.6710267
+kava,kava,Kava,,113,"['Binance Launchpad', 'Finance / Banking', 'DWF Labs Portfolio', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Layer 1 (L1)']",1075327299.476472
+oasis-network,rose,Oasis Network,binance-smart-chain,110,"['Proof of Stake (PoS)', 'Smart Contract Platform', 'Privacy Coins', 'BNB Chain Ecosystem', 'Layer 1 (L1)']",1073954817.7244189
+klay-token,klay,Klaytn,klay-token,116,"['Layer 1 (L1)', 'Klaytn Ecosystem']",1021093268.4476422
+wemix-token,wemix,WEMIX,,118,"['WEMIX Ecosystem', 'Play To Earn']",1004309077.6628677
+corgiai,corgiai,CorgiAI,cronos,115,"['AI Meme Coins', 'Solana Ecosystem', 'Meme', 'Cronos Ecosystem', 'Ethereum Ecosystem']",997483917.1173956
+gnosis,gno,Gnosis,ethereum,117,"['Decentralized Exchange (DEX)', 'Protocol', 'Smart Contract Platform', 'Decentralized Finance (DeFi)', 'Prediction Markets', 'Gnosis Chain Ecosystem', 'MEV Protection', 'Layer 1 (L1)', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",994960624.9367083
+cheelee,cheel,Cheelee,binance-smart-chain,119,"['SocialFi', 'BNB Chain Ecosystem']",986972493.8108592
+gatechain-token,gt,Gate,ethereum,123,"['Proof of Stake (PoS)', 'Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",973095433.4059721
+osmosis,osmo,Osmosis,,122,"['Osmosis Ecosystem', 'Decentralized Exchange (DEX)', 'Paradigm Portfolio', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'Cosmos Ecosystem']",966838174.8676258
+blur,blur,Blur,ethereum,120,"['FTX Holdings', 'eGirl Capital Portfolio', 'NFTFi', 'Paradigm Portfolio', 'NFT', 'Ethereum Ecosystem', 'NFT Marketplace']",958977762.6018286
+jasmycoin,jasmy,JasmyCoin,ethereum,127,"['DWF Labs Portfolio', 'Internet of Things (IOT)', 'Ethereum Ecosystem']",935168375.0683352
+terra-luna,lunc,Terra Luna Classic,,126,"['Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Decentralized Finance (DeFi)', 'Cosmos Ecosystem', 'Terra Ecosystem', 'Fantom Ecosystem']",933042043.6069899
+woo-network,woo,WOO,ethereum,124,"['Exchange-based Tokens', 'Centralized Exchange (CEX)', 'BNB Chain Ecosystem', 'Solana Ecosystem', 'Fantom Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'ZkSync Ecosystem']",931577558.3661361
+dymension,dym,Dymension,,125,"['Modular Blockchain', 'Rollups-as-a-Service (RaaS)', 'Cosmos Ecosystem']",900433524.3425299
+curve-dao-token,crv,Curve DAO,ethereum,131,"['Curve Ecosystem', 'DWF Labs Portfolio', 'Decentralized Exchange (DEX)', 'Governance', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'Yield Farming', 'Gnosis Chain Ecosystem', 'Fantom Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",888853082.3706002
+illuvium,ilv,Illuvium,ethereum,121,"['Adventure Games', 'Gaming Governance Token', 'RPG', 'Gaming (GameFi)', 'Metaverse', 'NFT', 'Play To Earn', 'Ethereum Ecosystem']",883428514.5423244
+sweth,sweth,Swell Ethereum,ethereum,132,"['Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Liquid Staking Tokens']",870733214.2596478
+astar,astr,Astar,,130,"['Smart Contract Platform', 'Polkadot Ecosystem', 'Layer 1 (L1)', 'Ethereum Ecosystem']",867336088.9824891
+nervos-network,ckb,Nervos Network,,133,"['Multicoin Capital Portfolio', 'Rollup', 'Proof of Work (PoW)', 'Interoperability']",866874284.8375617
+bitcoin-gold,btg,Bitcoin Gold,,128,"['Bitcoin Fork', 'Cryptocurrency', 'Proof of Work (PoW)']",854443687.5576012
+manta-network,manta,Manta Network,manta-pacific,135,"['Multicoin Capital Portfolio', 'Manta Network Ecosystem', 'Binance Launchpool', 'Layer 2 (L2)']",839516213.98374
+lido-staked-sol,stsol,Lido Staked SOL,solana,129,['Liquid Staking Tokens'],833457098.7676454
+nexo,nexo,NEXO,ethereum,137,"['Alleged SEC Securities', 'Finance / Banking', 'Fantom Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",815768256.5286391
+enjincoin,enj,Enjin Coin,ethereum,138,"['Gaming Blockchains', 'Entertainment', 'Gaming (GameFi)', 'Metaverse', 'NFT', 'Layer 1 (L1)', 'Harmony Ecosystem', 'Ethereum Ecosystem']",809455735.6759025
+aioz-network,aioz,AIOZ Network,ethereum,136,"['DePIN', 'DWF Labs Portfolio', 'Artificial Intelligence (AI)', 'Smart Contract Platform', 'Storage', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Ethereum Ecosystem']",796782045.075057
+staked-frax-ether,sfrxeth,Staked Frax Ether,ethereum,141,"['Eth 2.0 Staking', 'BNB Chain Ecosystem', 'Fantom Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Moonbeam Ecosystem', 'Ethereum Ecosystem', 'Liquid Staking Tokens', 'Optimism Ecosystem']",771588334.5304743
+echelon-prime,prime,Echelon Prime,ethereum,134,"['Base Ecosystem', 'AI-Themed Coins', 'Gaming Utility Token', 'Card Games', 'Paradigm Portfolio', 'Gaming (GameFi)', 'Ethereum Ecosystem']",767182346.5891494
+ondo-finance,ondo,Ondo,ethereum,139,"['Coinbase Ventures Portfolio', 'Ethereum Ecosystem', 'Real World Assets (RWA)']",749749329.6534424
+livepeer,lpt,Livepeer,ethereum,145,"['DePIN', 'Multicoin Capital Portfolio', 'Coinbase Ventures Portfolio', 'Harmony Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",739426619.4876332
+usdd,usdd,USDD,tron,142,"['Stablecoins', 'USD Stablecoin', 'BNB Chain Ecosystem', 'Avalanche Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",732481697.4925407
+coinbase-wrapped-staked-eth,cbeth,Coinbase Wrapped Staked ETH,ethereum,146,"['Base Ecosystem', 'Eth 2.0 Staking', 'Wrapped-Tokens', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Liquid Staking Tokens', 'Optimism Ecosystem']",721784348.5908841
+iotex,iotx,IoTeX,ethereum,143,"['DePIN', 'Account Abstraction', 'Internet of Things (IOT)', 'Business Platform', 'BNB Chain Ecosystem', 'IoTeX Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",715501271.5295842
+ethereum-name-service,ens,Ethereum Name Service,ethereum,144,"['Governance', 'NFT', 'Ethereum Ecosystem']",708311410.4421928
+1inch,1inch,1inch,ethereum,149,"['FTX Holdings', 'Decentralized Exchange (DEX)', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'BNB Chain Ecosystem', 'Number', 'Near Protocol Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",704778460.6221511
+space-id,id,SPACE ID,binance-smart-chain,152,"['Binance Launchpad', 'DWF Labs Portfolio', 'NFT', 'BNB Chain Ecosystem', 'Ethereum Ecosystem', 'NFT Marketplace']",702624509.0383743
+memecoin-2,meme,Memecoin,ethereum,153,"['Binance Launchpool', 'NFT', 'Meme', 'Ethereum Ecosystem']",698508237.3049638
+celo,celo,Celo,celo,147,"['Proof of Stake (PoS)', 'DWF Labs Portfolio', 'Coinbase Ventures Portfolio', 'Celo Ecosystem']",695617598.0838697
+kelp-dao-restaked-eth,rseth,Kelp DAO Restaked ETH,ethereum,150,"['Restaking', 'Liquid Restaking Tokens', 'Ethereum Ecosystem', 'Liquid Staking Tokens']",691549045.6271064
+ocean-protocol,ocean,Ocean Protocol,ethereum,151,"['DePIN', 'Artificial Intelligence (AI)', 'Protocol', 'Storage', 'Polkadot Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",690672056.5820967
+holotoken,hot,Holo,ethereum,148,"['DePIN', 'Smart Contract Platform', 'Storage', 'Harmony Ecosystem', 'Ethereum Ecosystem']",690462114.5317566
+radix,xrd,Radix,,160,"['Radix Ecosystem', 'DWF Labs Portfolio', 'Smart Contract Platform', 'Layer 1 (L1)']",675897503.5774579
+terra-luna-2,luna,Terra,,154,"['Alleged SEC Securities', 'Osmosis Ecosystem', 'Cosmos Ecosystem']",664341014.227461
+frax-share,fxs,Frax Share,ethereum,155,"['Curve Ecosystem', 'Decentralized Finance (DeFi)', 'Seigniorage', 'BNB Chain Ecosystem', 'Solana Ecosystem', 'Olympus Pro', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Liquid Staking Governance Tokens', 'Ethereum Ecosystem']",657436531.2969358
+zilliqa,zil,Zilliqa,,156,"['Smart Contract Platform', 'BNB Chain Ecosystem', 'Zilliqa Ecosystem', 'Ethereum Ecosystem']",656927098.5438529
+xdce-crowd-sale,xdc,XDC Network,ethereum,159,"['Finance / Banking', 'Smart Contract Platform', 'XDC Ecosystem', 'Ethereum Ecosystem']",654301429.8576523
+frax,frax,Frax,ethereum,161,"['Stablecoins', 'USD Stablecoin', 'Decentralized Finance (DeFi)', 'Seigniorage', 'BNB Chain Ecosystem', 'Solana Ecosystem', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Moonbeam Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",645174933.3047924
+rocket-pool,rpl,Rocket Pool,ethereum,157,"['Business Services', 'Proof of Stake (PoS)', 'Defi Pulse Index (DPI)', 'Infrastructure', 'Coinbase Ventures Portfolio', 'Decentralized Finance (DeFi)', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Liquid Staking Governance Tokens', 'Ethereum Ecosystem']",642782628.9727712
+arkham,arkm,Arkham,ethereum,166,"['Binance Launchpad', 'Artificial Intelligence (AI)', 'Coinbase Ventures Portfolio', 'Analytics', 'Ethereum Ecosystem']",618239764.8066723
+stepn,gmt,GMT,solana,162,"['Binance Launchpad', 'Sports Games', 'Gaming Governance Token', 'Gaming (GameFi)', 'NFT', 'BNB Chain Ecosystem', 'Solana Ecosystem', 'Play To Earn', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Move To Earn']",613150471.0010076
+metis-token,metis,Metis,ethereum,168,"['DWF Labs Portfolio', 'Rollup', 'BNB Chain Ecosystem', 'Metis Ecosystem', 'Ethereum Ecosystem', 'Layer 2 (L2)']",613112561.5513085
+loopring,lrc,Loopring,ethereum,170,"['Loopring Ecosystem', 'Decentralized Exchange (DEX)', 'Rollup', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Layer 2 (L2)', 'Zero Knowledge (ZK)']",612258221.3115735
+trust-wallet-token,twt,Trust Wallet,binance-smart-chain,163,"['Account Abstraction', 'BNB Chain Ecosystem', 'Wallets']",604019576.1581031
+amp-token,amp,Amp,ethereum,140,"['Alleged SEC Securities', 'Governance', 'Decentralized Finance (DeFi)', 'Ethereum Ecosystem']",591998789.447152
+superfarm,super,SuperVerse,ethereum,164,"['NFT', 'BNB Chain Ecosystem', 'Collectibles', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'NFT Marketplace']",588996645.4184595
+apenft,nft,APENFT,tron,169,['BNB Chain Ecosystem'],587004343.4798537
+dexe,dexe,DeXe,ethereum,167,"['Business Platform', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",579424067.2633137
+coredaoorg,core,Core,,172,['Layer 1 (L1)'],576748117.0911374
+fasttoken,ftn,Fasttoken,ethereum,179,['Ethereum Ecosystem'],567377259.2018763
+pixels,pixel,Pixels,ethereum,165,"['Ronin Ecosystem', 'Gaming Utility Token', 'Gaming (GameFi)', 'Ethereum Ecosystem']",566052986.4697226
+theta-fuel,tfuel,Theta Fuel,,175,"['Theta Ecosystem', 'Proof of Stake (PoS)']",563042081.9921013
+compound-governance-token,comp,Compound,ethereum,174,"['Defi Pulse Index (DPI)', 'Paradigm Portfolio', 'Governance', 'Decentralized Finance (DeFi)', 'Lending/Borrowing', 'Yield Farming', 'BNB Chain Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",562915657.226792
+siacoin,sc,Siacoin,,171,"['DePIN', 'Paradigm Portfolio', 'Storage', 'Proof of Work (PoW)', 'Near Protocol Ecosystem']",561365265.9400322
+golem,glm,Golem,ethereum,176,"['DePIN', 'Artificial Intelligence (AI)', 'Business Platform', 'Polygon Ecosystem', 'Ethereum Ecosystem']",555163801.6523672
+altlayer,alt,AltLayer,ethereum,173,"['Restaking', 'Rollups-as-a-Service (RaaS)', 'Rollup', 'Binance Launchpool', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",550352361.4892074
+casper-network,cspr,Casper Network,,177,"['Proof of Stake (PoS)', 'Smart Contract Platform']",544961363.0239698
+skale,skl,SKALE,ethereum,182,"['Multicoin Capital Portfolio', 'Gaming Blockchains', 'Gaming (GameFi)', 'Ethereum Ecosystem', 'Layer 2 (L2)']",531575111.6118111
+tether-gold,xaut,Tether Gold,ethereum,181,"['Stablecoins', 'Asset-backed Tokens', 'Tokenized Gold', 'Ethereum Ecosystem']",529983538.4493103
+qtum,qtum,Qtum,,186,"['Proof of Stake (PoS)', 'Smart Contract Platform']",522281998.5341528
+ankr,ankr,Ankr Network,ethereum,183,"['DePIN', 'Technology & Science', 'Rollups-as-a-Service (RaaS)', 'Cosmos Ecosystem', 'Polkadot Ecosystem', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Celo Ecosystem', 'Fantom Ecosystem', 'Moonriver Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'Liquid Staking Governance Tokens', 'Ethereum Ecosystem', 'Optimism Ecosystem']",513973041.8946789
+moonbeam,glmr,Moonbeam,,184,"['Coinbase Ventures Portfolio', 'Smart Contract Platform', 'Polkadot Ecosystem', 'Layer 1 (L1)']",510212528.8222924
+basic-attention-token,bat,Basic Attention,ethereum,189,"['Solana Ecosystem', 'Near Protocol Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",505504155.9824587
+gmx,gmx,GMX,arbitrum-one,185,"['Decentralized Finance (DeFi)', 'Perpetuals', 'Derivatives', 'Avalanche Ecosystem', 'Arbitrum Ecosystem']",505019248.2566891
+book-of-meme,bome,BOOK OF MEME,solana,114,['Solana Ecosystem'],500590613.540181
+compound-wrapped-btc,cwbtc,cWBTC,ethereum,190,"['Finance / Banking', 'Asset-backed Tokens', 'Decentralized Finance (DeFi)', 'cToken', 'Ethereum Ecosystem']",496005653.51880866
+zetachain,zeta,ZetaChain,ethereum,180,"['ZetaChain Ecosystem', 'Smart Contract Platform', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Ethereum Ecosystem']",494201811.77423733
+helium-mobile,mobile,Helium Mobile,solana,178,"['DePIN', 'Solana Ecosystem']",494009702.7741949
+nem,xem,NEM,,191,[],490558817.5742483
+project-galaxy,gal,Galxe,ethereum,194,"['Multicoin Capital Portfolio', 'DWF Labs Portfolio', 'Coinbase Ventures Portfolio', 'SocialFi', 'Binance Launchpool', 'NFT', 'BNB Chain Ecosystem', 'Ethereum Ecosystem', 'Identity', 'Zero Knowledge (ZK)']",481778155.59722114
+origintrail,trac,OriginTrail,ethereum,187,"['Decentralized Science (DeSci)', 'Artificial Intelligence (AI)', 'Metaverse', 'Polkadot Ecosystem', 'Gnosis Chain Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Interoperability']",479766219.56009346
+stader-ethx,ethx,Stader ETHx,ethereum,196,"['Ethereum Ecosystem', 'Liquid Staking Tokens']",476810763.09421617
+kusama,ksm,Kusama,,193,"['Proof of Stake (PoS)', 'Polkadot Ecosystem']",476359161.7928896
+gas,gas,Gas,neo,197,[],475162908.8960563
+nosana,nos,Nosana,solana,187,"['DePIN', 'Artificial Intelligence (AI)', 'Solana Ecosystem']",472340961.8209661
+zcash,zec,Zcash,,195,"['Privacy Coins', 'Proof of Work (PoW)', 'Zero Knowledge (ZK)']",467958681.60829645
+kujira,kuji,Kujira,osmosis,203,"['Kujira Ecosystem', 'Cosmos Ecosystem', 'BNB Chain Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem', 'Optimism Ecosystem']",462061610.47814405
+dash,dash,Dash,,198,"['Alleged SEC Securities', 'Cryptocurrency', 'Proof of Stake (PoS)', 'Masternodes', 'Privacy Coins', 'Proof of Work (PoW)', 'Governance']",455472400.0097936
+kadena,kda,Kadena,,192,"['Kadena Ecosystem', 'Multicoin Capital Portfolio', 'Protocol', 'Smart Contract Platform', 'Proof of Work (PoW)', 'Layer 1 (L1)']",452452942.4891533
+zelcash,flux,Flux,,205,"['DePIN', 'Cryptocurrency', 'Masternodes', 'Proof of Work (PoW)']",451777335.12107575
+biconomy,bico,Biconomy,ethereum,199,"['Account Abstraction', 'Coinbase Ventures Portfolio', 'Arbitrum Ecosystem', 'Edgeware Ecosystem', 'Ethereum Ecosystem']",450843026.93218267
+raydium,ray,Raydium,solana,158,"['Decentralized Exchange (DEX)', 'Decentralized Finance (DeFi)', 'Automated Market Maker (AMM)', 'Yield Farming', 'Launchpad', 'Solana Ecosystem']",450656082.41031325
+aelf,elf,aelf,ethereum,204,"['Infrastructure', 'Ethereum Ecosystem']",447968652.08551496
+decred,dcr,Decred,,201,"['Cryptocurrency', 'Proof of Stake (PoS)', 'Privacy Coins', 'Proof of Work (PoW)', 'Governance', 'Layer 1 (L1)']",444869299.4733677
+paal-ai,paal,PAAL AI,ethereum,209,"['Telegram Apps', 'PAAL AI', 'Discord Bots', 'Artificial Intelligence (AI)', 'Ethereum Ecosystem']",443362606.49898636
+mask-network,mask,Mask Network,ethereum,202,"['DWF Labs Portfolio', 'Privacy Coins', 'Governance', 'BNB Chain Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",440542713.5693136
+waves,waves,Waves,ethereum,212,"['Proof of Stake (PoS)', 'DWF Labs Portfolio', 'Smart Contract Platform', 'Solana Ecosystem', 'Ethereum Ecosystem']",439979649.1427098
+ethereum-pow-iou,ethw,EthereumPoW,,207,"['Proof of Work (PoW)', 'EthereumPoW Ecosystem']",436085274.5316785
+benqi-liquid-staked-avax,savax,BENQI Liquid Staked AVAX,avalanche,200,"['Avalanche Ecosystem', 'Liquid Staking Tokens']",433835837.84008837
+chia,xch,Chia,,210,"['DePIN', 'Smart Contract Platform']",430699520.3424591
+vanar-chain,vanry,Vanar Chain,ethereum,208,"['Layer 1 (L1)', 'Polygon Ecosystem', 'Ethereum Ecosystem']",415560442.4817559
+compound-ether,ceth,cETH,ethereum,214,"['Finance / Banking', 'Compound Tokens', 'Asset-backed Tokens', 'Decentralized Finance (DeFi)', 'cToken', 'Ethereum Ecosystem']",407064216.1307932
+deso,deso,Decentralized Social,,215,"['Cryptocurrency', 'Coinbase Ventures Portfolio', 'SocialFi']",404176089.4709845
+baby-doge-coin,babydoge,Baby Doge Coin,binance-smart-chain,223,"['Dog-Themed Coins', 'BNB Chain Ecosystem', 'Meme', 'Ethereum Ecosystem']",399167177.3278128
+harmony,one,Harmony,,213,"['Binance Launchpad', 'Protocol', 'Smart Contract Platform', 'Harmony Ecosystem']",398719679.8122748
+ravencoin,rvn,Ravencoin,,218,"['Cryptocurrency', 'Proof of Work (PoW)']",397750547.9484906
+pax-gold,paxg,PAX Gold,ethereum,220,"['Stablecoins', 'Asset-backed Tokens', 'Tokenized Gold', 'Harmony Ecosystem', 'Ethereum Ecosystem']",396580797.59141654
+stride,strd,Stride,osmosis,225,"['Cosmos Ecosystem', 'Liquid Staking Governance Tokens']",391574775.9700904
+dao-maker,dao,DAO Maker,ethereum,211,"['Governance', 'BNB Chain Ecosystem', 'Launchpad', 'DaoMaker Ecosystem', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",389702635.240844
+portal-2,portal,Portal,ethereum,216,"['Gaming Platform', 'Ethereum Ecosystem']",386702805.02001417
+coq-inu,coq,Coq Inu,avalanche,231,"['Meme', 'Avalanche Ecosystem']",385997658.0879291
+oec-token,okt,OKT Chain,,221,"['Cosmos Ecosystem', 'OEC Ecosystem']",384591740.9130802
+mx-token,mx,MX,ethereum,224,"['Cryptocurrency', 'Exchange-based Tokens', 'Centralized Exchange (CEX)', 'Ethereum Ecosystem']",382175689.8756196
+audius,audio,Audius,ethereum,226,"['Multicoin Capital Portfolio', 'Music', 'Coinbase Ventures Portfolio', 'NFT', 'Solana Ecosystem', 'Ethereum Ecosystem']",381765809.8977267
+aleph-zero,azero,Aleph Zero,,219,"['Rollup', 'Smart Contract Platform', 'Layer 1 (L1)', 'Zero Knowledge (ZK)']",380903855.6945899
+neutron-3,ntrn,Neutron,,222,"['Osmosis Ecosystem', 'Binance Launchpool', 'Cosmos Ecosystem']",380708384.4979634
+aragon,ant,Aragon,ethereum,228,"['Software', 'Governance', 'Cosmos Ecosystem', 'Ethereum Ecosystem']",379611972.24267566
+sushi,sushi,Sushi,ethereum,227,"['Decentralized Exchange (DEX)', 'Governance', 'Exchange-based Tokens', 'Decentralized Finance (DeFi)', 'Yearn Ecosystem', 'Automated Market Maker (AMM)', 'Yield Farming', 'BNB Chain Ecosystem', 'Gnosis Chain Ecosystem', 'Solana Ecosystem', 'Fantom Ecosystem', 'Harmony Ecosystem', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Arbitrum Ecosystem', 'OEC Ecosystem', 'Ethereum Ecosystem']",377028182.4475818
+jito-governance-token,jto,Jito,solana,206,"['Multicoin Capital Portfolio', 'Solana Ecosystem', 'Liquid Staking Governance Tokens']",376868451.13185066
+convex-finance,cvx,Convex Finance,ethereum,230,"['Curve Ecosystem', 'Decentralized Finance (DeFi)', 'Yield Aggregator', 'Metagovernance', 'Ethereum Ecosystem']",373701208.5241221
+boba-network,boba,Boba Network,ethereum,235,"['Rollup', 'Smart Contract Platform', 'Ethereum Ecosystem', 'Layer 2 (L2)']",369117953.656561
+api3,api3,API3,ethereum,232,"['Oracle', 'Decentralized Finance (DeFi)', 'Number', 'Near Protocol Ecosystem', 'Cardano Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",368564555.8239725
+telcoin,tel,Telcoin,ethereum,217,"['Polygon Ecosystem', 'Ethereum Ecosystem']",367177442.7804164
+l7dex,lsd,L7DEX,binance-smart-chain,237,['BNB Chain Ecosystem'],364700249.5587751
+xai-blockchain,xai,Xai,arbitrum-one,229,"['XAI Ecosystem', 'Layer 3 (L3)', 'Gaming (GameFi)', 'Binance Launchpool', 'Arbitrum Ecosystem']",363937350.91744393
+mog-coin,mog,Mog Coin,ethereum,246,"['Meme', 'Ethereum Ecosystem']",360883013.3020177
+safepal,sfp,SafePal,ethereum,236,"['Binance Launchpad', 'BNB Chain Ecosystem', 'Wallets', 'Polygon Ecosystem', 'Ethereum Ecosystem']",360159055.3297242
+threshold-network-token,t,Threshold Network,ethereum,240,['Ethereum Ecosystem'],356581506.8400271
+0x0-ai-ai-smart-contract,0x0,0x0.ai: AI Smart Contract,ethereum,234,"['Artificial Intelligence (AI)', 'Privacy Coins', 'Ethereum Ecosystem']",354003941.606211
+reserve-rights-token,rsr,Reserve Rights,ethereum,242,"['Base Ecosystem', 'Coinbase Ventures Portfolio', 'Decentralized Finance (DeFi)', 'Ethereum Ecosystem']",351934460.19142026
+delysium,agi,Delysium,ethereum,243,"['Artificial Intelligence (AI)', 'BNB Chain Ecosystem', 'Ethereum Ecosystem']",351682337.190185
+just,jst,JUST,tron,238,"['Tron Ecosystem', 'Decentralized Finance (DeFi)']",350704496.7442565
+mantra-dao,om,MANTRA,ethereum,239,"['Infrastructure', 'Cosmos Ecosystem', 'Cosmos Ecosystem', 'Polkadot Ecosystem', 'BNB Chain Ecosystem', 'Layer 1 (L1)', 'Polygon Ecosystem', 'Ethereum Ecosystem', 'Real World Assets (RWA)']",350065391.54460514
+uma,uma,UMA,ethereum,241,"['Finance / Banking', 'Business Services', 'Oracle', 'Governance', 'Decentralized Finance (DeFi)', 'Synthetic Issuer', 'Derivatives', 'Avalanche Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",345389064.4909946
+band-protocol,band,Band Protocol,ethereum,244,"['Binance Launchpad', 'Business Services', 'Oracle', 'Decentralized Finance (DeFi)', 'Cosmos Ecosystem', 'Near Protocol Ecosystem', 'Fantom Ecosystem', 'Polygon Ecosystem', 'Ethereum Ecosystem']",340614336.2811977
+seedify-fund,sfund,Seedify.fund,binance-smart-chain,247,"['DWF Labs Portfolio', 'Decentralized Finance (DeFi)', 'BNB Chain Ecosystem', 'Launchpad', 'Arbitrum Ecosystem', 'Ethereum Ecosystem']",335209238.04903984
+icon,icx,ICON,,250,['Smart Contract Platform'],333220600.8240951
+ontology,ont,Ontology,,252,"['Proof of Stake (PoS)', 'Masternodes', 'Smart Contract Platform', 'Polkadot Ecosystem', 'BNB Chain Ecosystem', 'Near Protocol Ecosystem']",324728669.0141904
+rollbit-coin,rlb,Rollbit Coin,ethereum,233,"['Gambling', 'Solana Ecosystem', 'Ethereum Ecosystem']",315062273.921424
+ssv-network,ssv,SSV Network,ethereum,248,"['Coinbase Ventures Portfolio', 'Ethereum Ecosystem']",314195425.21199703
+blox,cdt,Blox,ethereum,249,['Ethereum Ecosystem'],268275319.25612327
