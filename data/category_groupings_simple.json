@@ -1,0 +1,33 @@
+{
+    "Market Cap": [
+        "XL Market Cap",
+        "Large Market Cap",
+        "Medium Market Cap",
+        "Small Market Cap",
+        "XS Market Cap"
+    ],
+    "Category": [
+        "Cryptocurrency",
+        "Smart Contract Platform",
+        "Stablecoins",
+        "Layer 1 (L1)",
+        "Layer 2 (L2)",
+        "Centralized Exchange (CEX)",
+        "Decentralized Finance (DeFi)",
+        "NFT",
+        "Meme"
+    ],
+    "Ecosystem": 
+    [
+        "Arbitrum Ecosystem",
+        "Avalanche Ecosystem",
+        "BNB Chain Ecosystem",
+        "Ethereum Ecosystem",
+        "Kava Ecosystem",
+        "Moonriver Ecosystem",
+        "Near Protocol Ecosystem",
+        "Polygon Ecosystem",
+        "Solana Ecosystem",
+        "Tron Ecosystem"
+    ]
+}
