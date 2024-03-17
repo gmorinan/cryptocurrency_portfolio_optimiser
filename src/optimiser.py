@@ -50,9 +50,13 @@ def solver(
         The optimised weights.
     """
 
+
     # set up primary variable 
     n_assets = len(lst_assets)
     var_weights = cp.Variable(n_assets)
+
+    # set up artificial maximum weight to increase number of assets
+    artificial_max_weight = 1 - (0.5 / n_max_assets)
 
     # set objective function based on maximising returns
     mu = mu_expected_return.loc[lst_assets].values
@@ -65,7 +69,7 @@ def solver(
 
     # set up constraints
     min_weights = [weights_assets.get(asset)[0] for asset in lst_assets]
-    max_weights = [weights_assets.get(asset)[1] for asset in lst_assets]
+    max_weights = [min(weights_assets.get(asset)[1],artificial_max_weight) for asset in lst_assets]
 
     constraints = [
         cp.sum(var_weights) == 1, 
@@ -83,7 +87,7 @@ def solver(
             category_weight_sum = cp.sum(var_weights[category_indices])
             constraints += [
                 category_weight_sum >= weights_categories[grouping][category][0],
-                category_weight_sum <= weights_categories[grouping][category][1]
+                category_weight_sum <= min(weights_categories[grouping][category][1],artificial_max_weight)
             ]
 
     # solve the problem
